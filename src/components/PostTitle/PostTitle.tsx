@@ -11,8 +11,7 @@ const PostTitle = ({ text, accentWord, className }: PostTitleProps) => {
         <h3 className={className}>
             {text
                 .split(' ')
-                .map((word, index) => (index + 1 === accentWord ? <span>{word}</span> : word))
-                .join(' ')}
+                .map((word, index) => (index + 1 === accentWord ? <span key={word}>{word} </span> : word + ' '))}
         </h3>
     );
 };

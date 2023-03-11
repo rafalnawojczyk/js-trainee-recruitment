@@ -4,4 +4,5 @@ export default interface HomepageData {
     accentWord: number;
     image: string;
     altText: string;
+    id: string;
 }

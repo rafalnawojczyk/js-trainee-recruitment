@@ -3,9 +3,7 @@
 .post {
     &__wrapper {
         position: relative;
-        display: flex;
-        flex-direction: column;
-        gap: 2.4rem;
+        margin-top: 6rem;
     }
     &__image {
         width: 100%;
@@ -14,24 +12,26 @@
         object-fit: cover; // Optional
     }
     &__imageWrapper {
-        // TODO:
-        height: 400px;
-        width: 700px;
+        aspect-ratio: 17/9;
+        width: 100%;
         position: relative;
+        overflow: hidden;
     }
     &__title {
         font-weight: 700;
         font-size: 1.2rem;
         color: $font-grey;
         text-transform: uppercase;
-        letter-spacing: 5%;
+        letter-spacing: 0.6px;
         line-height: 1.5;
+        margin-bottom: 1rem;
     }
     &__subtitle {
         font-weight: 500;
         font-size: 4rem;
-        letter-spacing: -3%;
+        letter-spacing: -1.2px;
         line-height: 110%;
+        margin-bottom: 1.6rem;
         & span {
             color: $font-orange;
         }
